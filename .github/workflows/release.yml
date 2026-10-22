@@ -60,7 +60,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          repository: ferry-vn/1go-shortlink
+          repository: kdigivn/1go-shortlink
           ref: ${{ github.ref_name }}
           token: ${{ secrets.SOURCE_TOKEN }}
           persist-credentials: false
@@ -127,7 +127,7 @@ jobs:
           git config --global core.longpaths true
       - uses: actions/checkout@v6
         with:
-          repository: ferry-vn/1go-shortlink
+          repository: kdigivn/1go-shortlink
           ref: ${{ github.ref_name }}
           token: ${{ secrets.SOURCE_TOKEN }}
           persist-credentials: false
@@ -193,7 +193,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          repository: ferry-vn/1go-shortlink
+          repository: kdigivn/1go-shortlink
           ref: ${{ github.ref_name }}
           token: ${{ secrets.SOURCE_TOKEN }}
           persist-credentials: false
@@ -246,7 +246,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          repository: ferry-vn/1go-shortlink
+          repository: kdigivn/1go-shortlink
           ref: ${{ github.ref_name }}
           token: ${{ secrets.SOURCE_TOKEN }}
           persist-credentials: false
@@ -343,7 +343,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          repository: ferry-vn/1go-shortlink
+          repository: kdigivn/1go-shortlink
           ref: ${{ github.ref_name }}
           token: ${{ secrets.SOURCE_TOKEN }}
           persist-credentials: false
