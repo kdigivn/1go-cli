@@ -62,7 +62,7 @@ jobs:
         with:
           repository: kdigivn/1go-shortlink
           ref: ${{ github.ref_name }}
-          token: ${{ secrets.SOURCE_TOKEN }}
+          ssh-key: ${{ secrets.SOURCE_SSH_KEY }}
           persist-credentials: false
           submodules: recursive
       - name: Install dist
@@ -129,7 +129,7 @@ jobs:
         with:
           repository: kdigivn/1go-shortlink
           ref: ${{ github.ref_name }}
-          token: ${{ secrets.SOURCE_TOKEN }}
+          ssh-key: ${{ secrets.SOURCE_SSH_KEY }}
           persist-credentials: false
           submodules: recursive
       - name: Install Rust non-interactively if not already installed
@@ -195,7 +195,7 @@ jobs:
         with:
           repository: kdigivn/1go-shortlink
           ref: ${{ github.ref_name }}
-          token: ${{ secrets.SOURCE_TOKEN }}
+          ssh-key: ${{ secrets.SOURCE_SSH_KEY }}
           persist-credentials: false
           submodules: recursive
       - name: Install cached dist
@@ -248,7 +248,7 @@ jobs:
         with:
           repository: kdigivn/1go-shortlink
           ref: ${{ github.ref_name }}
-          token: ${{ secrets.SOURCE_TOKEN }}
+          ssh-key: ${{ secrets.SOURCE_SSH_KEY }}
           persist-credentials: false
           submodules: recursive
       - name: Install cached dist
@@ -345,6 +345,6 @@ jobs:
         with:
           repository: kdigivn/1go-shortlink
           ref: ${{ github.ref_name }}
-          token: ${{ secrets.SOURCE_TOKEN }}
+          ssh-key: ${{ secrets.SOURCE_SSH_KEY }}
           persist-credentials: false
           submodules: recursive
